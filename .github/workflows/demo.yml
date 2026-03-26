@@ -27,6 +27,14 @@ jobs:
         run: npm run build
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
+<<<<<<< HEAD
+=======
+        with:
+          name: dist-files
+          path: |
+            dist
+            package.json
+>>>>>>> 0910134 (artf upload)
   deploy:
     needs: build
     runs-on: ubuntu-latest
